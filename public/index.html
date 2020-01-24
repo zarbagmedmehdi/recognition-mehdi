@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> finek</title>
+
+    <!-- update the version number as needed -->
+    <!-- include only the Firebase features as you need
+    <script defer src="/__/firebase/7.6.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.6.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.6.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js"></script>-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
+
+    <script defer src="face-api.min.js"></script>
+
+    <script defer src="fireInit.js"></script>
+    <script defer src="front.js"></script>
+
+    <script defer src="service.js"></script>
+    <script defer src="script.js"></script>
+
+  </head>
+  <body id="body">
+    <div id="message">
+      <h2>Systeme de détection facial </h2>
+    <a>
+      <div id="loading" class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <label id="imageUpload" class="btn btn-outline-light">
+        choisir un photo <input type="file" id="imageUploadBtn" hidden>
+      </label>
+
+    </a>
+    </div>
+    <div id="brain" style="width:100%;height:0;padding-bottom:56%;position:relative;">
+
+      <img width="100%" height="100%" style="position:absolute" SRC="brain.gif">
+
+    </div>
+  
+
+    <div id="divPhoto"       ></div>
+
+    <div  id="info" class="card text-center">
+
+      <div class="card-body">
+        <h5 class="card-title">sujet de disparition </h5>
+        <p id="description" class="card-text"></p>
+        <a href="#" class="btn btn-primary">contacter</a>
+      </div>
+      <div id="vu" class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+  </body>
+
+</html>
